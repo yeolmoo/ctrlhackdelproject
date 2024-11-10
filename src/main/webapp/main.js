@@ -7,6 +7,7 @@ updateDisplay();
 document.getElementById('challengeButton').addEventListener('click', () => {
     document.getElementById('challengeBox').style.display = 'none';
     document.getElementById('mainPage').style.display = 'block';
+    updateDisplay(); // Ensure collected characters are shown on main page load
 });
 
 // Hint button event
@@ -24,8 +25,15 @@ document.getElementById('resetButton').addEventListener('click', () => {
 });
 
 function updateDisplay() {
-    const revealed = progress.map((p, i) => (p ? fullMessage[i] : '_')).join(' ');
-    document.getElementById('revealed').innerText = revealed;
+    const collectedDisplay = document.getElementById('collectedDisplay');
+    collectedDisplay.innerHTML = ''; // Clear existing display
+
+    progress.forEach((p, i) => {
+        const charBox = document.createElement('div');
+        charBox.classList.add('char-box');
+        charBox.innerText = p ? fullMessage[i] : '_'; // Show character if revealed, otherwise empty
+        collectedDisplay.appendChild(charBox);
+    });
 }
 
 // Simulate opening a question (for linking, replace alert with navigation logic)

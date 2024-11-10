@@ -11,7 +11,7 @@
         <h1 class="title">Cybersecurity Challenge</h1>
         <div id="challengeBox">
             <p id="instructions">Solve the challenges to reveal the hidden message!</p>
-            <button id="challengeButton">Start Challenge</button>
+            <button id="challengeButton" class="cyber-button">Start Challenge</button>
             <p id="result"></p>
         </div>
 
@@ -27,9 +27,10 @@
                 <button onclick="openQuestion(5)">5</button>
                 <button onclick="openQuestion(6)">6</button>
             </div>
-            <p id="progress">Progress: <span id="revealed">[Nothing Revealed]</span></p>
-            <button id="hintButton">Hint</button>
-            <button id="resetButton">Reset</button>
+            <p id="progress">Collected Characters:</p>
+            <div id="collectedDisplay" class="collected-display"></div>
+            <button id="hintButton" class="cyber-button">Hint</button>
+            <button id="resetButton" class="cyber-button">Reset</button>
             <p id="hintResult"></p>
         </div>
     </div>

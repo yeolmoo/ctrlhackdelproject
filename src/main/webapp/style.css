@@ -1,7 +1,8 @@
+/* General body styling */
 body {
     background-color: black;
-    color: neon-green;
-    font-family: 'Press Start 2P', cursive; /* Use retro font */
+    color: #39ff14; /* Bright neon green */
+    font-family: 'Press Start 2P', cursive; /* Retro font */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,15 +10,19 @@ body {
     margin: 0;
 }
 
+/* Container styling */
 .container {
     text-align: center;
+    width: 80%;
 }
 
+/* Title styling */
 .title {
     color: #00FF00; /* Neon green */
     margin-bottom: 20px;
 }
 
+/* General button styling */
 button {
     background-color: #333;
     color: #00FF00;
@@ -25,9 +30,48 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    margin: 5px;
 }
 
 button:hover {
     background-color: #00FF00;
     color: black;
+}
+
+/* Custom retro button styling */
+.cyber-button {
+    background-color: #1a1f2b; /* Dark, metallic blue */
+    color: #39ff14; /* Bright green terminal-style text */
+    border: 2px solid #00ffff; /* Neon cyan glow effect */
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'Courier New', monospace; /* Pixelated-style font */
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #39ff14;
+    transition: box-shadow 0.3s ease;
+}
+
+.cyber-button:hover {
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* Styling for the collected character display */
+.collected-display {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.collected-display .char-box {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00FF00;
+    margin: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    color: #00FF00;
+    background-color: black;
 }
