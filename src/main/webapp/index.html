@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Cybersecurity Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Cybersecurity Challenge</h1>
+        <div id="challengeBox">
+            <p id="instructions">Solve the challenges to reveal the hidden message!</p>
+            <button id="challengeButton">Start Challenge</button>
+            <p id="result"></p>
+        </div>
+
+        <!-- Main Page (hidden initially) -->
+        <div id="mainPage" style="display: none;">
+            <h2>Choose a Question</h2>
+            <div class="question-buttons">
+                <!-- Numbered question buttons -->
+                <button onclick="openQuestion(1)">1</button>
+                <button onclick="openQuestion(2)">2</button>
+                <button onclick="openQuestion(3)">3</button>
+                <button onclick="openQuestion(4)">4</button>
+                <button onclick="openQuestion(5)">5</button>
+                <button onclick="openQuestion(6)">6</button>
+            </div>
+            <p id="progress">Progress: <span id="revealed">[Nothing Revealed]</span></p>
+            <button id="hintButton">Hint</button>
+            <button id="resetButton">Reset</button>
+            <p id="hintResult"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

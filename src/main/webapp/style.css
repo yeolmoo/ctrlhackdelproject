@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: neon-green;
+    font-family: 'Press Start 2P', cursive; /* Use retro font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: #00FF00; /* Neon green */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00FF00;
+    color: black;
+}
