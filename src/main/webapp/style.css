@@ -75,3 +75,10 @@ button:hover {
     color: #00FF00;
     background-color: black;
 }
+
+#hintResult {
+    min-height: 30px; /* Adjust the height as needed to fit the hint text */
+    margin-top: 10px; /* Space between the hint and the buttons */
+    color: #00FF00; /* Ensure the text matches the retro theme */
+    text-align: center; /* Center the text */
+}

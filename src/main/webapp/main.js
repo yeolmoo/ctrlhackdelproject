@@ -5,6 +5,7 @@ updateDisplay();
 
 // Event listener for starting the challenge
 document.getElementById('challengeButton').addEventListener('click', () => {
+    console.log('Start Challenge button clicked!'); // Debug line to confirm click event
     document.getElementById('challengeBox').style.display = 'none';
     document.getElementById('mainPage').style.display = 'block';
     updateDisplay(); // Ensure collected characters are shown on main page load
@@ -40,3 +41,7 @@ function updateDisplay() {
 function openQuestion(number) {
     alert(`Question ${number} clicked! Implement navigation logic here.`);
 }
+
+document.getElementById('hintButton').addEventListener('click', () => {
+    document.getElementById('hintResult').innerText = 'Hint: Shift each letter back by one place in the alphabet.';
+});
